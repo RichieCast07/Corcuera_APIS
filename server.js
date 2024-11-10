@@ -1,11 +1,11 @@
 require('dotenv').config();
 const http = require('http');
 const app = require('./app');
-const { sequelize } = require('./models');
+const { connection } = require('./src/models');
 
 const PORT = process.env.PORT || 3000;
 
-sequelize.sync()
+connection.sync()
     .then(() => {
         console.log('Conexión con la base de datos exitosa y modelos sincronizados.');
         const server = http.createServer(app);

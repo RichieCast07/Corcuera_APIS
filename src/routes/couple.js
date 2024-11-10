@@ -2,14 +2,14 @@ const express = require('express');
 const router = express.Router();
 const couple = require('../controllers/couple');
 
-router.post('/couples', coupleController.createCouple);
+router.post('/couples', couple.createCouple);
 
-router.get('/couples', coupleController.getAllCouples);
+router.get('/couples', couple.getAllCouples);
 
-router.get('/couples/:id', coupleController.getCoupleById);
+router.get('/couples/:id', couple.getCoupleById);
 
-router.put('/couples/:id', coupleController.updateCouple);
+router.put('/couples/:id', couple.updateCouple);
 
-router.delete('/couples/:id', coupleController.deleteCouple);
+router.delete('/couples/:id', couple.deleteCouple);
 
 module.exports = router;

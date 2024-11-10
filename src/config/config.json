@@ -1,9 +1,9 @@
 {
     "development": {
         "username": "admin",
-        "password": "chocolate200201614",
-        "database": "Reading",
-        "host": "database-1.crggasycsk5y.us-east-1.rds.amazonaws.com",
+        "password": "22005_SPLOIT48",
+        "database": "Corcuera_Padel",
+        "host": "corcuerapadel.cndhqwtqqym8.us-east-1.rds.amazonaws.com",
         "dialect": "mysql"
     }
 }

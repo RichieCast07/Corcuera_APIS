@@ -1,30 +1,26 @@
 module.exports = (sequelize, DataTypes) => {
-    const Couple = sequelize.define('Couple', {
-        id: {
-            type: DataTypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: true
-        },
-        nombre: {
+    const User = sequelize.define('User', {
+        name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        padelista1: {
+        lastname: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        padelista2: {
+        contacto: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            unique: true
         },
-        cancha: {
+        password: {
             type: DataTypes.STRING,
             allowNull: false
         }
     }, {
-        tableName: 'couples',
+        tableName: 'users',
         timestamps: false
     });
 
-    return Couple;
+    return User;
 };
