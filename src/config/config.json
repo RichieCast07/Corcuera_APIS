@@ -1,0 +1,9 @@
+{
+    "development": {
+        "username": "admin",
+        "password": "chocolate200201614",
+        "database": "Reading",
+        "host": "database-1.crggasycsk5y.us-east-1.rds.amazonaws.com",
+        "dialect": "mysql"
+    }
+}
