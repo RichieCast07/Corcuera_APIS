@@ -2,12 +2,12 @@ const express = require('express');
 const router = express.Router();
 const gameformation = require('../controllers/gameformation');
 
-router.post('/', gameformation.createCouple);
+router.post('/agregar', gameformation.createCouple);
 
-router.get('/', gameformation.getAllCouples);
+router.get('/obtener', gameformation.getAllCouples);
 
-router.post('/add-score', gameformation.addScore);
+router.post('/agregar', gameformation.addScore);
 
-router.delete('/:id', gameformation.deleteCouple);
+router.delete('/eliminar/:id', gameformation.deleteCouple);
 
 module.exports = router;
